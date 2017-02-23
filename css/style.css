@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #dd4814;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #fff; }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #293132;
+  width: 90%;
+  max-width: 750px;
+  margin: auto;
+  padding: 50px 60px; }
+  .content .titulo {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 20px; }
+  .content .formulario {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%; }
+    .content .formulario .ecuacion {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      width: 100%; }
+      .content .formulario .ecuacion p {
+        display: inline-block;
+        font-size: 3em;
+        color: #dd4814;
+        font-weight: bold;
+        padding: 20px 0; }
+      .content .formulario .ecuacion input[type="text"] {
+        border: none;
+        font-size: 1.2em;
+        text-align: center;
+        color: #293132;
+        display: inline-block;
+        width: 15%;
+        padding: 20px 0px;
+        margin: 20px 0px; }
+    .content .formulario .respuestas {
+      width: 100%; }
+      .content .formulario .respuestas label {
+        font-size: 2.5em;
+        margin-right: 20px; }
+      .content .formulario .respuestas input[type="text"] {
+        background: #293132;
+        border: none;
+        font-size: 2em;
+        text-align: center;
+        color: #fff;
+        display: inline-block;
+        width: 30%;
+        padding: 15px 20px;
+        margin-bottom: 10px; }
+    .content .formulario .btn {
+      font-family: "Open Sans", sans-serif;
+      display: inline-block;
+      border-radius: 3px;
+      min-width: 200px;
+      cursor: pointer;
+      border: 3px solid #dd4814;
+      color: #fff;
+      background: transparent;
+      font-size: 2em;
+      text-align: center;
+      padding: 10px 20px;
+      text-decoration: none;
+      margin: 0;
+      transition: all 0.5s ease; }
+      .content .formulario .btn:hover {
+        border: 3px solid transparent;
+        background: #dd4814;
+        transition: all 0.5s ease-out; }
+
+@keyframes color {
+  from {
+    border-color: #dd4814;
+    color: #fff; }
+  50% {
+    border-color: #293132;
+    color: #293132; }
+  to {
+    border-color: #dd4814;
+    color: #fff; } }
+
+/*# sourceMappingURL=style.css.map */

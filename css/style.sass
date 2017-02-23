@@ -1,0 +1,104 @@
+$naranja: #dd4814
+$naranjaClaro: #F8CCBC
+$grisOscuro: #293132
+$blanco: #fff
+$gris: #ccc
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+body
+	font-family: 'Open Sans', sans-serif
+	background: $naranja
+	font-family: Arial, sans-serif
+	font-size: 16px
+	color: $blanco
+
+.content
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	background: $grisOscuro
+	width: 90%
+	max-width: 750px
+	margin: auto
+	padding: 50px 60px
+	.titulo
+		color: $blanco
+		font-size: 3em
+		font-weight: 300
+		text-align: center
+		padding-bottom: 20px
+	.formulario
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-around
+		align-content: center
+		width: 100%
+		.ecuacion
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-content: center
+			width: 100%
+			p
+				display: inline-block
+				font-size: 3em
+				color: $naranja
+				font-weight: bold
+				padding: 20px 0
+			input[type="text"]
+				border: none
+				font-size: 1.2em
+				text-align: center
+				color: $grisOscuro
+				display: inline-block
+				width: 15%
+				padding: 20px 0px
+				margin: 20px 0px
+		.respuestas
+			width: 100%
+			label
+				font-size: 2.5em
+				margin-right: 20px
+			input[type="text"]
+				background: $grisOscuro
+				border: none
+				font-size: 2em
+				text-align: center
+				color: $blanco
+				display: inline-block
+				width: 30%
+				padding: 15px 20px
+				margin-bottom: 10px
+		.btn
+			font-family: 'Open Sans', sans-serif
+			display: inline-block
+			border-radius: 3px
+			min-width: 200px
+			cursor: pointer
+			border: 3px solid $naranja
+			color: $blanco
+			background: transparent
+			font-size: 2em
+			text-align: center
+			padding: 10px 20px
+			text-decoration: none
+			margin: 0
+			transition: all .5s ease
+			&:hover
+				border: 3px solid transparent
+				background: $naranja
+				transition: all .5s ease-out
+
+@keyframes color
+	from
+		border-color: $naranja
+		color: $blanco
+	50%
+		border-color: $grisOscuro
+		color: $grisOscuro
+	to
+		border-color: $naranja
+		color: $blanco

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet"> 
+	<title>Determinante de una matriz</title>
+</head>
+<body>
+	<div class="content">
+		<h1 class="titulo">Sistema de ecuaciones por determinantes</h1>
+		<form action="" class="formulario">
+			<div class="ecuacion">
+				<input type="text" id="a11">
+				<input type="text" id="a12">
+				<input type="text" id="a13">
+				<p>=</p>
+				<input type="text" id="a14">
+			</div>
+
+			<div class="ecuacion">
+				<input type="text" id="a21">
+				<input type="text" id="a22">
+				<input type="text" id="a23">
+				<p>=</p>
+				<input type="text" id="a24">
+			</div>
+			
+			<div class="ecuacion">
+				<input type="text" id="a31">
+				<input type="text" id="a32">
+				<input type="text" id="a33">
+				<p>=</p>
+				<input type="text" id="a34">
+			</div>
+			<div class="respuestas">
+				<label for="valorX">Valor en X = </label>
+				<input type="text" id="valorX" readonly>
+			</div>
+			<div class="respuestas">
+				<label for="valorY">Valor en Y = </label>
+				<input type="text" id="valorY" readonly>
+			</div>
+			<div class="respuestas">
+				<label for="valorZ">Valor en Z = </label>
+				<input type="text" id="valorZ" readonly>
+			</div>
+			<input type="button" onclick="calculo()" class="btn" value="Determinar">
+		</form>
+	</div>
+	<script src="js/determinantes.js"></script>
+</body>
+</html>
