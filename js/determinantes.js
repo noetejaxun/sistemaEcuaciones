@@ -2,7 +2,8 @@ function calculo () {
 	function determinante (a11, a12, a13, a21, a22, a23, a31, a32, a33){
 		ladoIzquierdo = (a31 * a22 * a13) + (a11 * a32 * a23) + (a21 * a12 * a33);
 		ladoDerecho  =  (a11 * a22 * a33) + (a21 * a32 * a13) + (a31 * a12 * a23);
-		return ladoDerecho - ladoIzquierdo;
+		var resultado = ladoDerecho - ladoIzquierdo;
+		return resultado;
 	}
 
 	var matrizA =  [parseFloat(document.getElementById('a11').value), parseFloat(document.getElementById('a12').value), parseFloat(document.getElementById('a13').value), parseFloat(document.getElementById('a14').value),
@@ -25,4 +26,4 @@ function calculo () {
 		document.getElementById('valorY').value = valorY;
 		document.getElementById('valorZ').value = valorZ;
 	}
-} 
+}
